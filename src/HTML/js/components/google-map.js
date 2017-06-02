@@ -27,7 +27,7 @@ var GoogleMap = function() {
             }];
 
             // Create a map object and specify the DOM element for display.
-            var NewYork = new google.maps.LatLng(41.850, -73.961);
+            var NewYork = new google.maps.LatLng(42.91274, -78.8837547);
             var map = new google.maps.Map(document.getElementById('map'), {
                 center: NewYork,
                 styles: styleArray,
@@ -65,7 +65,7 @@ var GoogleMap = function() {
                     Math.floor(worldCoordinate.y * scale / TILE_SIZE));
 
                 return [
-                    '277 Bedford Avenue, <br> Brooklyn, NY 11211, <br> New York, USA'
+                    '381 Richmond Avenue, <br> Buffalo, NY 14222, <br> New York, USA'
                 ].join('<br>');
             }
 
