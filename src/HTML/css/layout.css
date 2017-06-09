@@ -1,27 +1,5 @@
 @charset "UTF-8";
-/*----------------------------------------------------------------------
 
-	MASTER STYLESHEET
-
-	Project:        Metronic "Acidus" Frontend Freebie - Responsive HTML Template Based On Twitter Bootstrap 3.3.4
-	Version:        1.0
-	Author:         KeenThemes
-	Primary use:    Corporate, Business Themes.
-	Email:			support@keenthemes.com
-	Follow: 		http://www.twitter.com/keenthemes
-	Like: 			http://www.facebook.com/keenthemes
-	Website:		http://www.keenthemes.com
-	Premium:		Premium Metronic Admin Theme: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-
------------------------------------------------------------------------*/
-/* eg: @include user-select(none); */
-/* eg: @include rotate(45deg); */
-/* eg: @include translate3d(0,0,0); */
-/* eg: @include border-radius(3px); */
-/*------------------------------------------------------------------
-  	[The "base.scss" contains basic default element styles
-  		(colors, typography, margins & padding).]
-------------------------------------------------------------------*/
 html {
   overflow-x: hidden;
 }
@@ -405,79 +383,6 @@ h4 {
   }
 }
 
-/*--------------------------------------------------
-    [Back To Top Theme Button]
-----------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  right: 10px;
-  bottom: 10px;
-  display: inline-block;
-  z-index: 9;
-  width: 40px;
-  height: 40px;
-  font-size: 11px;
-  font-weight: 400;
-  color: #fff;
-  text-align: center;
-  line-height: 3;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  background: #515769;
-  border-radius: 3px;
-  visibility: hidden;
-  opacity: 0;
-  padding: 5px;
-  -webkit-transform: translate3d(0, 50px, 0);
-  -moz-transform: translate3d(0, 50px, 0);
-  transform: translate3d(0, 50px, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.back-to-top:hover {
-  color: #fff;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.back-to-top:focus, .back-to-top:hover {
-  text-decoration: none;
-}
-
-/* The Button Becomes Visible */
-.back-to-top.back-to-top-is-visible {
-  visibility: visible;
-  opacity: .6;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-.back-to-top.back-to-top-is-visible:hover {
-  opacity: 1;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
-/* If the user keeps scrolling down, the button is out of focus and becomes less visible */
-.back-to-top.back-to-top-fade-out {
-  opacity: .4;
-}
-
-.back-to-top.back-to-top-fade-out:hover {
-  opacity: 1;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-}
-
 /*------------------------------------------------------------------
   	[Text Colors]
 ------------------------------------------------------------------*/
@@ -729,97 +634,22 @@ h4 {
     [Top margin below 768px]
 ------------------------------------------------------------------*/
 @media (max-width: 768px) {
-  .sm-margin-b-0 {
-    margin-bottom: 0 !important;
-  }
-  .sm-margin-b-5 {
-    margin-bottom: 5px !important;
-  }
-  .sm-margin-b-10 {
-    margin-bottom: 10px !important;
-  }
-  .sm-margin-b-20 {
-    margin-bottom: 20px !important;
-  }
   .sm-margin-b-30 {
     margin-bottom: 30px !important;
   }
-  .sm-margin-b-40 {
-    margin-bottom: 40px !important;
-  }
-  .sm-margin-b-50 {
-    margin-bottom: 50px !important;
-  }
-  .sm-margin-b-60 {
-    margin-bottom: 60px !important;
-  }
-  .sm-margin-b-70 {
-    margin-bottom: 70px !important;
-  }
-  .sm-margin-b-80 {
-    margin-bottom: 80px !important;
-  }
-  .sm-margin-b-90 {
-    margin-bottom: 90px !important;
-  }
-  .sm-margin-b-100 {
-    margin-bottom: 100px !important;
-  }
-}
 
-/*------------------------------------------------------------------
-    [Top margin below 480px]
-------------------------------------------------------------------*/
-@media (max-width: 480px) {
-  .xs-margin-b-0 {
-    margin-bottom: 0 !important;
+  /*--------------------------------------------------
+      [Height]
+  ----------------------------------------------------*/
+  .height-100 {
+    height: 100px !important;
   }
-  .xs-margin-b-5 {
-    margin-bottom: 5px !important;
-  }
-  .xs-margin-b-10 {
-    margin-bottom: 10px !important;
-  }
-  .xs-margin-b-20 {
-    margin-bottom: 20px !important;
-  }
-  .xs-margin-b-30 {
-    margin-bottom: 30px !important;
-  }
-  .xs-margin-b-40 {
-    margin-bottom: 40px !important;
-  }
-  .xs-margin-b-50 {
-    margin-bottom: 50px !important;
-  }
-  .xs-margin-b-60 {
-    margin-bottom: 60px !important;
-  }
-  .xs-margin-b-70 {
-    margin-bottom: 70px !important;
-  }
-  .xs-margin-b-80 {
-    margin-bottom: 80px !important;
-  }
-  .xs-margin-b-90 {
-    margin-bottom: 90px !important;
-  }
-  .xs-margin-b-100 {
-    margin-bottom: 100px !important;
-  }
-}
 
-/*--------------------------------------------------
-    [Height]
-----------------------------------------------------*/
-.height-100 {
-  height: 100px !important;
-}
+  .height-200 {
+    height: 200px !important;
+  }
 
-.height-200 {
-  height: 200px !important;
-}
-
-.height-300 {
-  height: 300px !important;
+  .height-300 {
+    height: 300px !important;
+  }
 }
